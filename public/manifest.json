@@ -1,0 +1,79 @@
+{
+  "name": "SKYBORNE Hospital - Excellence médicale en RDC",
+  "short_name": "SKYBORNE",
+  "description": "SKYBORNE Hospital, établissement médical de référence en République Démocratique du Congo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1d4ed8",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "fr",
+  "categories": ["medical", "health", "hospital"],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/lovable-uploads/196efd1a-e11c-4c6b-925d-ca6a5f85a159.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/lovable-uploads/196efd1a-e11c-4c6b-925d-ca6a5f85a159.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Urgences",
+      "short_name": "Urgences",
+      "description": "Contacter les urgences SKYBORNE Hospital",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "/lovable-uploads/196efd1a-e11c-4c6b-925d-ca6a5f85a159.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Localisation",
+      "short_name": "Où nous trouver",
+      "description": "Localiser les centres SKYBORNE Hospital",
+      "url": "/#localisation",
+      "icons": [
+        {
+          "src": "/lovable-uploads/196efd1a-e11c-4c6b-925d-ca6a5f85a159.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Nous contacter",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "/lovable-uploads/196efd1a-e11c-4c6b-925d-ca6a5f85a159.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/lovable-uploads/196efd1a-e11c-4c6b-925d-ca6a5f85a159.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "SKYBORNE Hospital - Page d'accueil"
+    }
+  ]
+}
