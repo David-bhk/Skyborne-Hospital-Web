@@ -1,4 +1,6 @@
-# Guide de placement des images SKYBORNE Hospital
+# Guide de placemen### 2. REMPLACER les images de contenu
+
+#### A. Images Hero Section des images SKYBORNE Hospital
 
 ## Structure des dossiers images
 
@@ -10,9 +12,11 @@ skyborne-hospital-website/
 │   └── medical-equipment.jpg # 🏥 REMPLACER : Équipements modernes
 │
 └── public/                  # Images publiques (logo, favicon, etc.)
-    ├── favicon.ico          # 🆔 REMPLACER : Favicon du site
-    └── lovable-uploads/     # Dossier logos
-        └── 196efd1a-e11c-4c6b-925d-ca6a5f85a159.png  # 🏷️ REMPLACER : Logo principal
+    ├── favicon.ico          # 🆔 Favicon du site
+    └── assets/              # Ressources SKYBORNE
+        ├── skyborne-hospital-logo.png  # ✅ Logo principal
+        ├── skyborne-icon-192.svg      # ✅ Icône PWA
+        └── favicon.svg                # ✅ Favicon SK
 ```
 
 ## Actions à effectuer
@@ -21,9 +25,9 @@ skyborne-hospital-website/
 - Supprimer les 3 fichiers actuels
 - Ajouter vos nouvelles images avec les MÊMES NOMS
 
-### 2. REMPLACER le logo dans public/lovable-uploads/
-- Garder le même nom de fichier : 196efd1a-e11c-4c6b-925d-ca6a5f85a159.png
-- OU renommer partout dans le code (option avancée)
+### 2. Logo principal ✅ TERMINÉ
+- Logo migré vers: `public/assets/skyborne-hospital-logo.png`
+- Toutes les références mises à jour dans le code
 
 ### 3. OPTIONNEL : Ajouter un favicon personnalisé
 - Remplacer public/favicon.ico
@@ -52,7 +56,7 @@ skyborne-hospital-website/
 - **Contenu :** Équipements médicaux de pointe
 - **Utilisation :** Section Services (future utilisation)
 
-### Logo SKYBORNE (196efd1a-e11c-4c6b-925d-ca6a5f85a159.png)
+### Logo SKYBORNE (skyborne-hospital-logo.png)
 - **Taille :** 512x512px (carré)
 - **Format :** PNG (fond transparent)
 - **Poids :** < 50KB

@@ -14,7 +14,8 @@ const IMAGE_MIGRATIONS = {
   "medical-equipment.jpg": "skyborne-medical-equipment.jpg",
   
   // Logo dans public/
-  "196efd1a-e11c-4c6b-925d-ca6a5f85a159.png": "skyborne-hospital-logo.png"
+  // Logo principal - DÉJÀ MIGRÉ vers assets/
+  "skyborne-hospital-logo.png": "skyborne-hospital-logo.png"
 };
 
 // Fichiers à modifier si on change les noms :

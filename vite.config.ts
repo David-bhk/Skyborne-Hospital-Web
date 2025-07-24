@@ -10,7 +10,6 @@
  * 
  * Plugins utilisés :
  * - @vitejs/plugin-react-swc : Fast Refresh avec SWC (plus rapide que Babel)
- * - lovable-tagger : Tagging des composants en développement
  * 
  * @author SKYBORNE Hospital Dev Team
  * @version 1.0.0
@@ -19,7 +18,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { componentTagger } from "lovable-tagger";
 
 // ===== CONFIGURATION PRINCIPALE =====
 
@@ -35,11 +33,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     // Plugin React avec SWC (compilateur ultra-rapide)
     react(),
-    
-    // Plugin de tagging en développement uniquement
-    // Aide au debugging et à l'identification des composants
-    mode === 'development' && componentTagger(),
-  ].filter(Boolean), // Supprime les plugins falsy
+  ],
   
   // ===== RÉSOLUTION DES MODULES =====
   resolve: {

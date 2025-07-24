@@ -31,8 +31,10 @@ const CRITICAL_RESOURCES = [
   '/',                    // Page d'accueil
   '/manifest.json',       // Manifest PWA
   '/favicon.ico',         // Favicon
+  '/favicon.svg',         // Favicon SVG
   // Logo principal pour l'identité de marque
-  '/lovable-uploads/196efd1a-e11c-4c6b-925d-ca6a5f85a159.png',
+  '/assets/skyborne-hospital-logo.png',
+  '/assets/skyborne-icon-192.svg',
 ];
 
 // ===== INSTALLATION DU SERVICE WORKER =====
