@@ -31,9 +31,8 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
+    
+    await executeAsync(async () => {
       // Configuration EmailJS - Remplacez par vos vraies clés
       const serviceId = 'YOUR_SERVICE_ID';
       const templateId = 'YOUR_TEMPLATE_ID';
@@ -67,16 +66,7 @@ const Contact = () => {
         subject: '',
         message: ''
       });
-    } catch (error) {
-      toast({
-        title: "Erreur lors de l'envoi",
-        description: "Veuillez réessayer ou nous contacter directement par téléphone.",
-        variant: "destructive",
-        duration: 5000,
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+    });
   };
 
   const contactInfo = [
@@ -260,10 +250,10 @@ const Contact = () => {
 
                   <Button 
                     type="submit" 
-                    disabled={isSubmitting}
+                    disabled={isLoading}
                     className="w-full bg-primary hover:bg-primary-dark text-primary-foreground py-3 text-lg font-semibold"
                   >
-                    {isSubmitting ? (
+                    {isLoading ? (
                       <>
                         <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
                         Envoi en cours...
