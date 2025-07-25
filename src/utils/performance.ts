@@ -10,6 +10,8 @@
 
 import { initBundleMonitoring } from './bundle-analysis';
 
+import { initBundleMonitoring } from './bundle-analysis';
+
 // ===== CORE WEB VITALS TRACKING =====
 
 /**
@@ -66,6 +68,9 @@ export const initPerformanceMonitoring = () => {
   
   measureFCP();
   measureLCP();
+  
+  // Initialize bundle monitoring as well
+  initBundleMonitoring();
   
   // Initialize bundle monitoring
   initBundleMonitoring();

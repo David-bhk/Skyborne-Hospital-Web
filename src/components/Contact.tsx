@@ -6,6 +6,8 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { toast } from '@/hooks/use-toast';
+import { useLoading } from '@/hooks/use-loading';
+import { LoadingButton } from '@/components/ui/loading';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -16,7 +18,8 @@ const Contact = () => {
     subject: '',
     message: ''
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  
+  const { isLoading, executeAsync } = useLoading();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
