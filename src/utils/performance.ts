@@ -8,6 +8,8 @@
  * @version 1.0.0
  */
 
+import { initBundleMonitoring } from './bundle-analysis';
+
 // ===== CORE WEB VITALS TRACKING =====
 
 /**
@@ -64,6 +66,9 @@ export const initPerformanceMonitoring = () => {
   
   measureFCP();
   measureLCP();
+  
+  // Initialize bundle monitoring
+  initBundleMonitoring();
   
   // Basic page load timing
   window.addEventListener('load', () => {
