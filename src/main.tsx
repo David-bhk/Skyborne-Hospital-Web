@@ -20,6 +20,17 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
+import { initPerformanceMonitoring } from "./utils/performance.ts";
+
+// ===== MONITORING DES PERFORMANCES =====
+
+/**
+ * Initialise le monitoring des performances dès le chargement
+ * Essentiel pour un site médical où la vitesse impacte les soins d'urgence
+ */
+if (import.meta.env.PROD) {
+  initPerformanceMonitoring();
+}
 
 // ===== ENREGISTREMENT DU SERVICE WORKER PWA =====
 
